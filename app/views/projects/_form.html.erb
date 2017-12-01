@@ -1,0 +1,14 @@
+<div class="field">
+
+</div>
+
+<%= render "layouts/errors", :object => @project %>
+
+<%= form_for [@project] do |f| %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %><br>
+  <%= f.label :description %><br>
+  <%= f.text_field :description %><br>
+  <%= f.hidden_field(:user_id, :value => current_user.id) %>
+  <%= f.submit %>
+<% end %>
