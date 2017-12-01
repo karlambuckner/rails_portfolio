@@ -31,3 +31,17 @@ body {
   text-align: center;
   img { width: 100% }
 }
+
+.nav > li ,a {
+  margin: 5px;
+  color: black;
+}
+
+.link a {
+  color: blue;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+}

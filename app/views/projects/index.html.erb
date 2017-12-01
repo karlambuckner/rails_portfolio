@@ -1,9 +1,15 @@
 <h1>Projects</h1>
 
 <% @projects.each do |project|%>
-  <li><%= project.name %></li>
-  <%= link_to "Edit Project", edit_project_path(project), :class => "btn btn-primary" %>
-  <%= link_to "Delete", project_path(project), :class => "btn btn-danger",
+  <h3><%= project.name %></h3>
+  <li><%= project.description %></li>
+  <li><%= project.link %></li>
+  <%= link_to "Edit Project", edit_project_path(project), :class => "btn btn-basic" %>
+  <%= link_to "Delete", project_path(project), :class => "btn btn-basic",
                         :data => {:confirm => "You sure?",
-                                  :method => "delete"} %>
+                                  :method => "delete"} %><br><br>
 <%end%>
+
+<div class="link">
+  <%= link_to 'Add New Project', new_project_path %><br><br>
+</div>
