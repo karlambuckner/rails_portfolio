@@ -4,12 +4,16 @@
   <h3><%= project.name %></h3>
   <li><%= project.description %></li>
   <li><%= project.link %></li>
+  <% if current_user && current_user.admin %>
   <%= link_to "Edit Project", edit_project_path(project), :class => "btn btn-basic" %>
   <%= link_to "Delete", project_path(project), :class => "btn btn-basic",
                         :data => {:confirm => "You sure?",
                                   :method => "delete"} %><br><br>
+  <%end%>
 <%end%>
 
 <div class="link">
-  <%= link_to 'Add New Project', new_project_path %><br><br>
+  <% if current_user && current_user.admin %>
+    <%= link_to 'Add new Project', new_project_path %>
+  <% end %>
 </div>
