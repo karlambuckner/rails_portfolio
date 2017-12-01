@@ -1,5 +1,9 @@
 <h1>Projects</h1>
 
 <% @projects.each do |project|%>
-  <%= project.name %>
+  <li><%= project.name %></li>
+  <%= link_to "Edit Project", edit_project_path(project), :class => "btn btn-primary" %>
+  <%= link_to "Delete", project_path(project), :class => "btn btn-danger",
+                        :data => {:confirm => "You sure?",
+                                  :method => "delete"} %>
 <%end%>
