@@ -9,6 +9,8 @@
   <%= f.text_field :name %><br>
   <%= f.label :description %><br>
   <%= f.text_field :description %><br>
+  <%= f.label :link %><br>
+  <%= f.text_field :link %><br>
   <%= f.hidden_field(:user_id, :value => current_user.id) %>
   <%= f.submit %>
 <% end %>
