@@ -1,12 +1,19 @@
 <h1>About Me</h1>
 
-<p>Hello! My name is Karla and I am a junior level developer living in Portland, OR. I am learning new things about programming daily.</p>
+<p>Hello! My name is Karla and I am a junior level developer living in Portland, OR. I am learning new things about programming daily as a student at Epicodus.</p>
 
-<p>My skills</p>
+<h4>Contact</h4>
+<ul>
+  <li>kmb2662@gmail.com</li>
+  <li>github.com/karlambuckner</li>
+  <li>linkedin.com/in/karla-buckner</li>
+</ul>
+<br>
+<h4>My skills</h4>
 
 <% @skills.each do |skill|%>
   <li><%= skill.skill %></li>
-  <% if current_user && current_user.admin %>
+  <% if current_user %>
   <%= link_to "Edit Skill", edit_skill_path(skill), :class => "btn btn-basic" %>
   <%= link_to "Delete", skill_path(skill), :class => "btn btn-basic",
                         :data => {:confirm => "You sure?",
@@ -15,7 +22,7 @@
 <%end%>
 
 <div class="link">
-  <% if current_user && current_user.admin %>
+  <% if current_user %>
   <%= link_to 'Add New Skill', new_skill_path %>
-  <%end%>
+  <% end %>
 </div>
