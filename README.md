@@ -8,6 +8,14 @@
 
 _This is a portfolio showing my skills and projects with a user authentication in place._
 
+## My Strengths
+
+* I like to troubleshoot and fix errors
+* I can take criticism well and learn from it
+* I am self-motivated and strive to finish the task at hand
+* I aim to have a solid plan of a task before beginning it
+* I work well in pairs or teams and enjoy the learning experience of it
+
 ## Setup/Installation Requirements
 
 * Clone the repository
