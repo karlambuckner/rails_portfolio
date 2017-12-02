@@ -649,6 +649,28 @@
         null,
         null
       ],
+      "/Users/karlabuckner/Desktop/rails_portfolio/spec/models/skills_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null
+      ],
+      "/Users/karlabuckner/Desktop/rails_portfolio/app/models/skill.rb": [
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
       "/Users/karlabuckner/Desktop/rails_portfolio/spec/models/user_spec.rb": [
         1,
         null,
@@ -738,11 +760,6 @@
         null,
         null
       ],
-      "/Users/karlabuckner/Desktop/rails_portfolio/app/models/skill.rb": [
-        1,
-        1,
-        null
-      ],
       "/Users/karlabuckner/Desktop/rails_portfolio/app/channels/application_cable/channel.rb": [
         1,
         1,
@@ -829,6 +846,6 @@
         null
       ]
     },
-    "timestamp": 1512172467
+    "timestamp": 1512173136
   }
 }
