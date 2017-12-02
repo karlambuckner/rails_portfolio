@@ -1,24 +1,41 @@
-# README
+# _Rails Portfolio_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### _Website to my personal programming portfolio. Dec 1, 2017._
 
-Things you may want to cover:
+#### By _**Karla Buckner**_
 
-* Ruby version
+## Description
 
-* System dependencies
+_This is a portfolio showing my skills and projects with a user authentication in place._
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+* Clone the repository
+* cd into repository
+* $ bundle install
+* $ rails db:create
+* $ rails db:migrate
+* $ rails s
+* visit localhost:3000 and signup and login
 
-* Database initialization
+## Known Bugs
 
-* How to run the test suite
+_There are no known bugs at this time_
 
-* Services (job queues, cache servers, search engines, etc.)
+## Support and contact details
 
-* Deployment instructions
+_For support contact:
+  kmb2662@gmail.com_
 
-* ...
+## Technologies Used
+
+_Ruby_
+_Rails_
+_Active Record_
+
+
+### License
+
+*This is licensed under the MIT license.*
+
+Copyright (c) 2017 **_Karla Buckner_**
