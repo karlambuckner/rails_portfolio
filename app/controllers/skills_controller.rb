@@ -1,9 +1,21 @@
 class SkillsController < ApplicationController
+  skip_before_action :authenticate_user!, :only => [:index, :show]
+
   before_action :only => [:new, :edit] do
     redirect_to new_user_session_path unless current_user && current_user.admin
   end
+
   def index
     @skills = Skill.all
+  end
+
+  def show
+    @skill = Skill.find(params[:id])
+    if current_user
+      @user = current_user
+    else
+      @user = 'none'
+    end
   end
 
   def new
