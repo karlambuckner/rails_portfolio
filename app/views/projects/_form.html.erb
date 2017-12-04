@@ -1,7 +1,3 @@
-<div class="field">
-
-</div>
-
 <%= render "layouts/errors", :object => @project %>
 
 <%= form_for [@project] do |f| %>
@@ -11,6 +7,8 @@
   <%= f.text_field :description %><br>
   <%= f.label :link %><br>
   <%= f.text_field :link %><br>
+  <%= f.label :image %><br>
+  <%= f.text_field :image %><br>
   <%= f.hidden_field(:user_id, :value => current_user.id) %><br>
   <%= f.submit %>
 <% end %>

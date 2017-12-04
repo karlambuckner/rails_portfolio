@@ -33,6 +33,10 @@ body {
   img { width: 100% }
 }
 
+.me {
+  border-radius: 200px;
+}
+
 .nav > li ,a {
   margin: 5px;
   color: black;
@@ -45,4 +49,14 @@ body {
 .btn {
   background-color: black;
   color: white;
+}
+
+#none {
+  background-color: lightgrey;
+  padding: 7px;
+  text-align: center;
+}
+
+#pad {
+  padding: 40px;
 }

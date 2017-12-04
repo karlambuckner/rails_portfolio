@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a portfolio showing my skills and projects with a user authentication in place._
+_This is a portfolio showcasing my skills and projects with a user authentication in place to edit my page._
 
 ## My Strengths
 
@@ -16,6 +16,15 @@ _This is a portfolio showing my skills and projects with a user authentication i
 * I aim to have a solid plan of a task before beginning it
 * I work well in pairs or teams and enjoy the learning experience of it
 
+## User stories
+
+When logged in user can:
+* Add, edit and delete a project
+* Add, edit and delete a skill
+* Add and edit avatar using paperclip
+* Edit user information, including log in credentials
+* Sign in and out of profile using authentication
+
 ## Setup/Installation Requirements
 
 * Clone the repository
@@ -24,7 +33,7 @@ _This is a portfolio showing my skills and projects with a user authentication i
 * $ rails db:create
 * $ rails db:migrate
 * $ rails s
-* visit localhost:3000 and signup and login
+* visit localhost:3000
 
 ## Known Bugs
 

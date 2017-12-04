@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsPortfolio</title>
+    <title>Rails Portfolio</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -33,7 +33,7 @@
     <div>
       <%= flash[:alert] %>
     </div>
-    <div class='container'>
+    <div class='container' id="pad">
       <%= yield %>
     </div>
   </body>
