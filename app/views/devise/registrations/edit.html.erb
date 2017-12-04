@@ -4,6 +4,14 @@
   <%= devise_error_messages! %>
 
   <div class="field">
+    <%= f.label :avatar, class: 'col-sm-2 control-label'  %>
+    <div class="col-sm-6">
+      <%= f.file_field :avatar %>
+    </div>
+  </div>
+  <br>
+
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
@@ -30,11 +38,13 @@
     <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %>
   </div>
-
+<br>
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
 <% end %>
+<br>
+<br>
 
 <h3>Cancel my account</h3>
 

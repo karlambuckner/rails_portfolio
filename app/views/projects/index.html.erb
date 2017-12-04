@@ -3,7 +3,7 @@
 <% @projects.each do |project|%>
   <h3><%= project.name %></h3>
   <li><%= project.description %></li>
-  <li><%= project.link %></li>
+  <li><a target="_blank" href="<%= project.link %>">Github Link</a></li>
   <% if current_user %>
   <%= link_to "Edit Project", edit_project_path(project), :class => "btn btn-basic" %>
   <%= link_to "Delete", project_path(project), :class => "btn btn-basic",
