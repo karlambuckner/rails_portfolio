@@ -35,6 +35,8 @@ When logged in user can:
 * $ rails s
 * visit localhost:3000
 
+Heroku link https://railsportfoliokarla.herokuapp.com/
+
 ## Known Bugs
 
 _There are no known bugs at this time_
