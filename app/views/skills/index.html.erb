@@ -1,6 +1,6 @@
 <h1>About Me</h1>
 
-<p>Hello! My name is Karla and I am a junior level developer living in Portland, OR. I am learning new things about programming daily as a student at Epicodus.</p>
+<p>Hello! My name is Karla and I am a junior level developer living in Portland, OR. I am learning new things about programming daily as a student at Epicodus and excited to take on greater challenges.</p>
 
 <img class="me" src="/images/missing.png" alt="Picture of me" width="250px" height="auto">
 <br>
@@ -29,6 +29,7 @@
         <li>Rails</li>
       </ul>
     </div>
+
     <div class="col-md-4">
     <h4>Frameworks | Testing | Other skills</h4>
 
@@ -45,7 +46,6 @@
 </div>
 
 <div class="link">
-  <% if current_user %>
+  <% current_user %>
   <%= link_to 'Add New Skill', new_skill_path %>
-  <% end %>
 </div>

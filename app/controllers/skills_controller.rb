@@ -1,6 +1,5 @@
 class SkillsController < ApplicationController
-  skip_before_action :authenticate_user!, :only => [:index, :show]
-  before_action :authorize_admin, :only => [:new]
+  before_action :authorize_admin, :only => [:new, :show]
 
   def index
     @skills = Skill.all

@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  skip_before_action :authenticate_user!, :only => [:index, :show]
+  before_action :authorize_admin, :only => [:edit, :update]
   def index
     @projects = Project.all
   end
