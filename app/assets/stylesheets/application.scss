@@ -37,9 +37,17 @@ body {
   border-radius: 200px;
 }
 
+.nav > .white {
+  color: white;
+}
+
 .nav > li ,a {
   margin: 5px;
   color: black;
+}
+
+.nav a:hover {
+  color: white;
 }
 
 .link a {
@@ -59,4 +67,37 @@ body {
 
 #pad {
   padding: 40px;
+}
+
+#myFooter{
+  padding-top:32px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#myFooter .container{
+  text-align: center;
+}
+
+#myFooter .footer-copyright{
+  margin-top: 20px;
+  text-align: center;
+  color: #777;
+}
+
+#myFooter a {
+  color: #282b2d;
+  font-size: 16px;
+}
+
+#myFooter a:hover {
+  color: #777;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
 }
