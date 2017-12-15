@@ -17,17 +17,32 @@
 </div>
 
 <br>
-<h4>My skills</h4>
+  <div class="row">
+    <div class="col-md-4">
+      <h4>Languages</h4>
 
-<% @skills.each do |skill|%>
-  <li><%= skill.skill %></li>
-  <% if current_user %>
-  <%= link_to "Edit Skill", edit_skill_path(skill), :class => "btn btn-basic" %>
-  <%= link_to "Delete", skill_path(skill), :class => "btn btn-basic",
-                        :data => {:confirm => "You sure?",
-                                  :method => "delete"} %><br><br>
-  <%end%>
-<%end%>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Ruby</li>
+        <li>Rails</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+    <h4>Frameworks | Testing | Other skills</h4>
+
+    <% @skills.each do |skill|%>
+      <li><%= skill.skill %></li>
+      <% if current_user %>
+      <%= link_to "Edit Skill", edit_skill_path(skill), :class => "btn btn-basic" %>
+      <%= link_to "Delete", skill_path(skill), :class => "btn btn-basic",
+                            :data => {:confirm => "You sure?",
+                                      :method => "delete"} %><br><br>
+      <%end%>
+    <%end%>
+  </div>
+</div>
 
 <div class="link">
   <% if current_user %>

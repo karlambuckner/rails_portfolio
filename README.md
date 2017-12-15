@@ -1,6 +1,6 @@
 # _Rails Portfolio_
 
-#### _Website to my personal programming portfolio. Dec 1, 2017._
+#### _Website to my personal programming portfolio. Dec 15, 2017._
 
 #### By _**Karla Buckner**_
 
@@ -51,7 +51,6 @@ _For support contact:
 _Ruby_
 _Rails_
 _Active Record_
-
 
 ### License
 
