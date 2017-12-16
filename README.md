@@ -1,5 +1,8 @@
 # _Rails Portfolio_
 
+![screen shot 2017-12-15 at 4 37 45 pm](https://user-images.githubusercontent.com/27794720/34065426-5902eaf6-e1b6-11e7-8044-00659076b5e8.png)
+
+
 #### _Website to my personal programming portfolio. Dec 15, 2017._
 
 #### By _**Karla Buckner**_
