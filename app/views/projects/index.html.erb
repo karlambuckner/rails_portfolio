@@ -1,6 +1,6 @@
 <h1>Projects</h1>
 <br>
-
+<div class="all">
 <% @projects.each do |project|%>
   <h3><%= project.name %></h3>
   <li><%= project.description %></li>
@@ -15,8 +15,9 @@
   <%end%>
 <%end%>
 
-<div class="link">
-  <% if current_user %>
-    <%= link_to 'Add new Project', new_project_path %>
-  <% end %>
+  <div class="link">
+    <% if current_user %>
+      <%= link_to 'Add new Project', new_project_path %>
+    <% end %>
+  </div>
 </div>
