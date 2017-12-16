@@ -18,5 +18,5 @@
 // = require_tree .
 
 $(document).ready(function(){
-        $('#content').show(3000);
-  });
+  $('.content').fadeIn(3000);
+});

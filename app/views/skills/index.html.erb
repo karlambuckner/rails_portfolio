@@ -1,17 +1,18 @@
 <h1>About Me</h1>
-
+<div class="content">
 <p>Hello! My name is Karla and I am a junior level developer living in Portland, OR. I am learning new things about programming daily as a student at Epicodus and excited to take on greater challenges.</p>
 
 <img class="me" src="/images/missing.png" alt="Picture of me" width="250px" height="auto">
 <br>
 <br>
+</div>
 
   <div class="row">
     <div class="col-md-4">
 
 
-      <a href="/" id="button">Languages</a>
-      <div id="content">
+      <h4>Languages</h4>
+      <div class="content">
       <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -22,21 +23,23 @@
     </div>
   </div>
 
-    <div class="col-md-4">
-    <h4>Frameworks | Testing | Other skills</h4>
-
-    <% @skills.each do |skill|%>
-      <li><%= skill.skill %></li>
-      <% if current_user %>
-      <%= link_to "Edit Skill", edit_skill_path(skill), :class => "btn btn-basic" %>
-      <%= link_to "Delete", skill_path(skill), :class => "btn btn-basic",
-                            :data => {:confirm => "You sure?",
-                                      :method => "delete"} %><br><br>
+      <div class="col-md-4">
+      <h4>Frameworks | Testing | Other skills</h4>
+      <div class="content">
+      <% @skills.each do |skill|%>
+        <li><%= skill.skill %></li>
+        <% if current_user %>
+        <%= link_to "Edit Skill", edit_skill_path(skill), :class => "btn btn-basic" %>
+        <%= link_to "Delete", skill_path(skill), :class => "btn btn-basic",
+                              :data => {:confirm => "You sure?",
+                                        :method => "delete"} %><br><br>
+        <%end%>
       <%end%>
-    <%end%>
+    </div>
   </div>
 </div>
 <div class="link">
-  <% current_user %>
+  <% if current_user %>
   <%= link_to 'Add New Skill', new_skill_path %>
+  <%end%>
 </div>
